@@ -1,0 +1,430 @@
+body {
+	  font-family: 'Kaushan Script', cursive;
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 15px;
+	  line-height: 1.6;
+	  color: #fff;
+      margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	  box-sizing: border-box;
+	
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+      margin: 0;}
+	  
+/*container*/
+.container {
+	  width: 100%;
+	  max-width: 1200px;
+	  margin: 0 auto;
+}
+
+/*intro*/
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background: url("../images/intro.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	 
+}
+
+.intro_title {
+	font-size: 130px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.intro_inner {
+	width: 100%;
+	max-width:600px;
+	margin: 0 auto;
+}
+/* .intro_suptitle { */
+	/* font-family: 'Kaushan Script', cursive; */
+	/* font-size: 72px; */
+	/* color: #fff; */
+	/* text-align: center; */
+	
+/* } */
+
+/*Header*/
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	padding-top: 30px;
+}
+
+.header_logo {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+}
+
+/*NAV*/
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav {
+	font-size: 14px;
+	text-transform: uppercase;
+	
+}
+.nav_link {
+	color: #fff;
+	text-decoration: none;
+	
+    transition: color .2s linear;
+	
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	position: relative;
+}
+.nav_link: hover {
+	color: #fce38a;
+}
+.nav_link: after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	
+	background-color: fff;
+	
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+/*Button*/
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	
+	border: 2px solid #fff;
+	
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	overflow: hidden;
+    width: 230px;
+}
+
+.btn: hover {
+	background-color: #fff;
+	color: #333;
+	margin-top: 52px;
+
+  /*����*/
+  -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+
+  /*��������*/
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
+}
+
+/* SECTION */
+.section{
+	padding: 80px 0;
+	
+}
+
+.section_header{
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto 40px;
+	color: black;
+	text-align: center;
+	
+}
+
+.section_suptitle{
+	
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	color: #333;
+	
+}
+.section_title{
+	font-size: 30px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+	
+}
+
+.section_title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 30px auto 0;
+	margin-bottom: 30px;
+	
+}
+
+.section_text {
+	color: #999;
+	font-size: 15px;
+}
+
+/* about */
+.about {
+	display: flex;
+	justify-content: space-between; /* ���� ���������� ����� */
+	
+	
+}
+
+.about_item {
+	width: 350px; /* ������ */
+	
+}
+
+.about_item:hover .about_img img{
+	opacity: .3; /* ��������� ������ */
+	transform: translate3d(-10px, -10px, 0); /* ��� �������� �������� ��� ������ */
+	
+}
+
+.about_img {
+	background: linear-gradient(to bottom,#f38181, #fce38a );
+	transition: transform .1s linear;
+}
+
+.about_img img {
+	display: block;
+	transition: opacity .1s lighter;
+	
+}
+
+/* Statistics */
+.statistics {
+	background-color: #00ffff;	
+}
+
+.stat {
+	display: flex;
+	
+}
+
+.stat_item {
+	flex: 1 1 0; /* ���� ����� ���� ��������� */
+	border-left: 1px solid #fce38a; /* ���� ����� ������ */
+    text-align: center;
+	padding: 70px 25px;
+}
+
+.stat_item:last-child {
+	border-right: 1px solid #fce38a; /* ���� ����� ������ */
+}
+
+.stat_count{
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
+	
+}
+
+.stat_text {
+	font-size: 14px; /* ������ ������ */
+	text-transform: uppercase;
+}
+
+/* services */
+.services {
+	display: flex;
+	
+}
+
+.services_item {
+	flex: 1 1 0;
+	padding-left: 90px;
+	position: relative;
+	
+}
+
+.services_title {
+	color: #333;
+	font-size: 14px; 
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	
+}
+
+.services_text {
+	color: #999;
+	font-size: 15px;
+	
+}
+.services_icon {
+	position: absolute;
+	top: 0;
+	left: 30px;
+	z-index: 1;	
+}
+
+/* Devices */
+
+.section-devices {
+	background: url("../images/device/fon.jpg" ) /* center */ no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-bottom: 0;
+	margin-bottom: 40px;
+	
+}
+
+.devices {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.devices_item{
+	display: block;
+		
+}
+
+.devices_item-iphone {
+	position: absolute;
+	bottom: -80px;
+	right: 0;
+	z-index: 1;
+	
+}
+
+/* We Do */
+
+.wedo {
+	display: flex;	
+	
+}
+
+.wedo_iteam {
+	width: 50%;
+	
+}
+
+.wedo_img {
+	width: 570px;
+	height: 380px;
+	
+}
+
+.acrd_title {
+	font-size:14px;
+	text-transform: uppercase;
+	color: #333;
+	
+}
+
+/* acrd */
+
+.acrd_iteam {
+	border: 1px solid #e5e5e5;
+	
+}
+
+.acrd_header {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 15px 20px 15px 60px;
+	position: relative;
+}
+.acrd_header:after {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	z-index: 1;
+	transform:rotate(-45deg)
+}
+.acrd_icon {
+	position: absolute;
+	top: 10%;
+	left: 20px;
+	z-index: 1;
+	
+}
+.acrd_content {
+	padding: 15px 20px;
+	font-size: 15px;
+	color: #999;
+	font-style: italic;
+	font-weight: 300;
+	/* display:none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
